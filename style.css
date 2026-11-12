@@ -1,0 +1,419 @@
+/* Global Settings */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    margin: 0;
+
+    padding: 0;
+
+    line-height: 1.6;
+
+}
+
+/* Navigation Bar */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    padding: 20px 8%;
+
+    background-color: #1c1c1c;
+
+    border-bottom: 1px solid #333333;
+
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    gap: 15px 25px;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+
+}
+
+.nav-links a:hover {
+
+    color: #aaaaaa;
+
+    opacity: 0.7;
+
+}
+
+/* Main Content */
+
+.container {
+
+    max-width: 1100px;
+
+    margin: 60px auto;
+
+    padding: 0 30px;
+
+}
+
+/* Glassmorphism Cards */
+
+.card {
+
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    padding: 35px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 255, 255, 0.35);
+
+    background: rgba(255, 255, 255, 0.07);
+
+}
+
+/* Typography */
+
+h1 {
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+}
+
+h2, h3 {
+
+    color: #ffffff;
+
+}
+
+.subtitle {
+
+    color: #67D5C2;
+
+    font-size: 16px;
+
+    letter-spacing: 0.7px;
+
+    line-height: 1.8;
+
+    margin-top: 8px;
+}
+
+
+p {
+
+    color: #c5c5c5;
+
+}
+/* Education Section */
+
+.education-item {
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+}
+
+.education-item h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+
+}
+
+.institution {
+
+    color: #999999;
+
+    font-size: 15px;
+
+    margin-top: 0;
+
+}
+/* Education Section */
+
+.education-item {
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+}
+/* Skills Section */
+
+.skills-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.skills-list li {
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 12px;
+
+    padding: 25px 20px;
+
+    color: #eeeeee;
+
+    transition: all 0.3s ease;
+
+}
+
+.skills-list li:hover {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.35);
+
+    transform: translateY(-4px);
+
+}
+/* Circular Skill Icon Badges */
+
+.icon-box {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 48px;
+
+    height: 48px;
+
+    background: #333333;
+
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+
+}
+
+.icon-box i {
+
+    font-size: 20px;
+
+    color: #ffffff;
+
+}
+
+.skills-list p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #eeeeee;
+
+}
+/* Profile Photograph */
+
+.profile-photo {
+
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 25px auto 30px;
+
+    border: 3px solid #a855f7;
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+}
+/* Interests & Hobbies */
+
+.hobbies-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+.hobbies-list li {
+
+    background: #1e1b2e;
+
+    border: 1px solid #6b42a1;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    line-height: 1.7;
+
+    transition: transform 0.3s ease;
+
+}
+
+.hobbies-list li:hover {
+
+    transform: translateY(-4px);
+
+}
+#contact a {
+
+    color: #F0C674;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+
+}
+
+#contact a:hover {
+
+    color: #ffffff;
+
+    text-decoration: underline;
+
+}
+/* Mobile Responsiveness */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 0 15px;
+
+        margin: 30px auto;
+
+    }
+
+    .card {
+
+        padding: 22px;
+
+    }
+
+    h1 {
+
+        font-size: 36px;
+
+    }
+
+    .skills-list,
+
+    .hobbies-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
